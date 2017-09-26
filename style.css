@@ -1,0 +1,370 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif; }
+
+.hero, .profits {
+  padding: 30px 0; }
+
+.col {
+  float: left;
+  min-height: 0;
+  position: relative; }
+
+div {
+  margin: 0; }
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block; }
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto; }
+
+header {
+  background-color: #34495e;
+  height: 50px; }
+  header img {
+    padding: 10px 0;
+    max-width: 20%; }
+  header ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style-type: none; }
+  header li {
+    display: inline-block; }
+  header a {
+    display: block;
+    color: #FFF;
+    padding: 0 10px;
+    line-height: 50px;
+    text-decoration: none;
+    text-transform: uppercase; }
+    header a:hover {
+      background: #ccc; }
+
+.row:before, .row:after {
+  content: " ";
+  display: table; }
+
+.row:after {
+  clear: both; }
+
+.hero {
+  width: 100%;
+  height: 250px;
+  background-image: url(https://kodilla.com//static/lessons/4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative; }
+
+.slogan {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #FFF;
+  width: 30%;
+  position: absolute;
+  right: 0;
+  top: 20%;
+  bottom: 20%; }
+  .slogan p {
+    font-size: 2rem;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; }
+
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
+section > div > div > .fa {
+  height: 60px;
+  width: 60px;
+  font-size: 40px;
+  border-radius: 5%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  color: #FFF;
+  background-color: #313332;
+  transition: 0.3s;
+  cursor: pointer;
+  line-height: 60px; }
+  section > div > div > .fa:hover {
+    color: #FFF;
+    background-color: #3498db; }
+  section > div > div > .fa:hover + h4 {
+    color: #3498db; }
+
+p {
+  text-align: center; }
+
+h4, h1, h2 {
+  text-align: center;
+  width: 100%;
+  transition: 0.3s; }
+
+.future {
+  padding: 30px 0;
+  box-shadow: 10px 10px 5px #888888; }
+
+.gallery {
+  padding: 60px 0 0 0;
+  box-shadow: 10px 10px 5px #888888; }
+
+section div.layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer; }
+  section div.layer .ikony {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; }
+  section div.layer:hover {
+    background-color: rgba(0, 0, 0, 0.2); }
+    section div.layer:hover .ikony {
+      display: block;
+      font-size: 20px;
+      color: #3498db; }
+
+.link_gallery i.fa-camera-retro:hover {
+  display: inline-block;
+  color: red; }
+.link_gallery i.fa-search:hover {
+  display: inline-block;
+  color: red; }
+
+.team {
+  padding: 0 50px;
+  position: relative; }
+
+.pict {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  border-radius: 50%; }
+
+.layer1 {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 27%; }
+
+.text {
+  color: #3498db;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none; }
+
+.team:hover .pict {
+  opacity: 0.3; }
+.team:hover .layer1 {
+  opacity: 1; }
+.team:hover .text {
+  display: block; }
+
+.textleft {
+  text-align: left; }
+
+.row1 {
+  padding: 0 5%; }
+
+.liczby h1 {
+  font-size: 50px;
+  color: #3498db; }
+
+.footer {
+  background-color: #333333;
+  color: #FFF;
+  position: relative;
+  padding-top: 5%; }
+
+.end {
+  background-color: #020202;
+  color: #FFF; }
+
+.padd_0 {
+  padding: 0; }
+
+.footer .col-4 {
+  padding: 0 20px; }
+.footer h4 {
+  position: relative;
+  display: inline; }
+.footer .kreska {
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 2px;
+  background-color: #ecf0f1;
+  display: inline;
+  margin-left: 15px; }
+
+.social-media {
+  margin: 0 auto;
+  background-color: #333333;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px; }
+
+.btn {
+  height: 45px;
+  width: 45px;
+  border: 0 none #FFF;
+  border-radius: 5%;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 20px; }
+  .btn:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+    color: #FFF; }
+
+.twitter {
+  color: #3B5998; }
+
+.google {
+  color: #DB5A3C; }
+
+.instagram {
+  color: #5C3D2E; }
+
+.github {
+  color: #4183C4; }
+
+.twitter:hover {
+  background-color: #4099FF; }
+
+.facebook:hover {
+  background-color: #3B5998; }
+
+.google:hover {
+  background-color: #DB5A3C; }
+
+.instagram:hover {
+  background-color: #5C3D2E; }
+
+.github:hover {
+  background-color: #4183C4; }
+
+@media (min-width: 768px) {
+  .col-m-1 {
+    width: 8.33%; }
+
+  .col-m-2 {
+    width: 16.66%; }
+
+  .col-m-3 {
+    width: 25%; }
+
+  .col-m-4 {
+    width: 33.33%; }
+
+  .col-m-5 {
+    width: 41.66%; }
+
+  .col-m-6 {
+    width: 50%; }
+
+  .col-m-7 {
+    width: 58.33%; }
+
+  .col-m-8 {
+    width: 66.66%; }
+
+  .col-m-9 {
+    width: 75%; }
+
+  .col-m-10 {
+    width: 83.33%; }
+
+  .col-m-11 {
+    width: 91.66%; }
+
+  .col-m-12 {
+    width: 100%; } }
+@media only screen and (max-width: 767px) {
+  [class*="col-"] {
+    width: 100%; }
+
+  header {
+    height: auto;
+    text-align: center; }
+    header ul {
+      float: none; }
+    header li {
+      display: block; }
+    header a {
+      font-weight: bold; }
+      header a:hover {
+        background-color: #34495e;
+        color: #ccc; }
+    header img {
+      min-width: 30%; }
+
+  .slogan {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center; }
+    .slogan p {
+      font-size: 1rem; }
+
+  section > div > div > i.fa {
+    margin: 0 auto;
+    float: none;
+    display: block;
+    width: 60px; }
+
+  .text {
+    font-size: 20px; } }
