@@ -8,7 +8,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'css/main.css': 'sass/main.sass'
+          'css/style.css': 'sass/style.sass'
         }
       }
     },
@@ -22,25 +22,26 @@ module.exports = function(grunt) {
         }]
     }
 },
-watch: {
-    scripts: {
-        files: ['sass/*.sass'],
-        tasks: ['sass'],
-        options: {
-            spawn: false,
-        },
-    }
-},
-browserSync: {
-    bsFiles: {
-        src : 'assets/css/*.css'
-    },
-    options: {
-        server: {
-            baseDir: "./"
-        }
-    }
-}
+	browserSync: {
+		bsFiles: {
+			src : 'css/*.css'
+		},
+		options: {
+			server: {
+				baseDir: "./"
+			}
+		}
+	},
+	watch: {
+		scripts: {
+			files: ['sass/*.sass'],
+			tasks: ['sass'],
+			options: {
+				spawn: false,
+			},
+		}
+	}
+
   });
   // Load the plugins tasks
 	grunt.loadNpmTasks('grunt-sass');
