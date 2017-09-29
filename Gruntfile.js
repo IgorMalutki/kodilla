@@ -24,11 +24,14 @@ module.exports = function(grunt) {
 },
 	browserSync: {
 		bsFiles: {
-			src : 'css/*.css'
+			src : ['css/*.css', '*.html']
+			
 		},
 		options: {
+			watchTask: true,
 			server: {
-				baseDir: "./"
+				baseDir: "./",
+				
 			}
 		}
 	},
@@ -49,5 +52,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-browser-sync');
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'imagemin','watch','browserSync']);
+  grunt.registerTask('default', ['sass', 'imagemin','browserSync','watch']);
 };
